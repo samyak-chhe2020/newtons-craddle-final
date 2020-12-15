@@ -22,11 +22,11 @@ function setup() {
 
 	roof=new Roof (400,100,730,50);
 	
-	bob1=new Bob(200,600,20);
-	bob2=new Bob(300,600,20);
-	bob3=new Bob(400,600,20);
-	bob4=new Bob(500,600,20);
-	bob5=new Bob(600,600,20);
+	bob1=new Bob(200,600,30);
+	bob2=new Bob(300,600,30);
+	bob3=new Bob(400,600,30);
+	bob4=new Bob(500,600,30);
+	bob5=new Bob(600,600,30);
 	
    rope1=new Rope(bob1.body,roof.body,-200,0);
    rope2=new Rope(bob2.body,roof.body,-100,0);
@@ -54,6 +54,7 @@ function draw() {
   rope4.display()
   rope5.display()
   drawSprites();
+  keyPressed();
  
 }
 function keyPressed(){
